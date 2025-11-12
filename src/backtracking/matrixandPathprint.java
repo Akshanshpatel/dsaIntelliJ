@@ -49,3 +49,6 @@ public class matrixandPathprint {
         path[d][r]=0;
     }
 }
+
+
+//Simple hint-->When a choice affect future answers use backtracking
