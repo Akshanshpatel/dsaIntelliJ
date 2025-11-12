@@ -7,7 +7,7 @@ public class Graph {
 
     HashMap<Integer,HashMap<Integer,Integer>> map=new HashMap<>();
     public  Graph(int v){
-        for(int i=1;i<=v;i++){
+        for(int i=1;i<=v;i++){  //lowda
             map.put(i,new HashMap<>());
         }
     }
