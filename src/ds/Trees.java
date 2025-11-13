@@ -1,4 +1,4 @@
-package dsa;
+package ds;
 
 public class Trees {
     static class TreeNode{

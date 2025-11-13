@@ -1,4 +1,4 @@
-package dsa;
+package ds;
 
 import java.util.*;
 

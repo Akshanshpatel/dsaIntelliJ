@@ -1,4 +1,4 @@
-package dsa;
+package ds;
 
 public class SinglyLL {
     static class LL{
