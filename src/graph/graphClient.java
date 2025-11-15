@@ -19,5 +19,6 @@ public class graphClient {
         System.out.println(g.BFS(6,7));
         System.out.println(g.DFS(6,7));
 
+
     }
 }

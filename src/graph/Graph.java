@@ -161,3 +161,50 @@ public class Graph{
         return false;
     }
 }
+class Solution {
+    public boolean isBipartite(int[][] graph) {
+        Queue<BipartitePair> q=new LinkedList<>();
+        HashMap<Integer,Integer> visited=new HashMap<>();
+
+        for(int i=0;i< graph.length;i++){   //will run for each vertex
+            if(visited.containsKey(i)){
+                continue;
+            }
+            q.add(new BipartitePair(i,0));
+
+            while(!q.isEmpty()){
+//                  1->remove
+                BipartitePair rem=q.poll();
+
+//                  2->ignore
+                if(visited.containsKey(rem.vtx)){
+                    if(visited.get(rem.vtx)!= rem.dis){   //will detect odd length here (causes mismatch)
+                        return false;
+                    }
+                }
+
+//                  3->add visited
+                visited.put(rem.vtx, rem.dis);
+
+//                  4->self work(nothing)
+
+//                  5->add unvisited neighbour
+                for(int nbrs:graph[rem.vtx]){
+                    if(!visited.containsKey(nbrs)){
+                        q.add(new BipartitePair(nbrs,rem.dis+1));
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
+    class BipartitePair{
+        int vtx;
+        int dis;
+        public  BipartitePair(int vtx,int dis){
+            this.vtx=vtx;
+            this.dis=dis;
+        }
+    }
+}

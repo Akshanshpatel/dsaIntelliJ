@@ -22,8 +22,8 @@ public class Traversal {
     public void BFT(){
         Queue<Integer> q=new LinkedList<>();
         HashSet<Integer> visited=new HashSet<>();
-        for(int key:map.keySet()) {
             int components=0;
+        for(int key:map.keySet()) {
             if (!visited.contains(key)) {
                 components++;
                 q.add(key);
@@ -48,6 +48,7 @@ public class Traversal {
             }
         }
         System.out.println();
+        System.out.println("components in this graph->"+components);
     }
 
     public void DFT() {
