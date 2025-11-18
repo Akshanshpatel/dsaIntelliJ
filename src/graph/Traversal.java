@@ -54,8 +54,8 @@ public class Traversal {
     public void DFT() {
         Stack<Integer> st = new Stack<>();
         HashSet<Integer> visited = new HashSet<>();
-        for (int key : map.keySet()) {
             int components = 0;
+        for (int key : map.keySet()) {
             if (!visited.contains(key)) {
                 components++;
                 st.push(key);
@@ -80,6 +80,7 @@ public class Traversal {
             }
         }
         System.out.println();
+        System.out.println("components in this graph->"+components);
     }
 
 //--------Q>>is Graph a valid tree
