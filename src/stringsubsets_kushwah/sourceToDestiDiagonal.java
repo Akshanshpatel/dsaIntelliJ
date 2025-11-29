@@ -1,4 +1,4 @@
-package stringsubsets;
+package stringsubsets_kushwah;
 
 import java.util.ArrayList;
 

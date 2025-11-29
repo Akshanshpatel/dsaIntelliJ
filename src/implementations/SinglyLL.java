@@ -1,4 +1,4 @@
-package ds;
+package implementations;
 
 public class SinglyLL {
     static class LL{

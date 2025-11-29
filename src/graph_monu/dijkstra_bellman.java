@@ -1,6 +1,5 @@
-package graph;
+package graph_monu;
 
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.PriorityQueue;
@@ -68,10 +67,15 @@ public class dijkstra_bellman {
         dj.addEdge(5, 6, 4);
         dj.addEdge(6, 7, 3);
         dj.addEdge(7, 5, 2);
-        dj.Dijkstra(1);
+        dj.Dijkstra(2);
 
     }
 //  Dijkstra is not right for negative weights
 //    so we study bellman-ford  but -ve weight in a cycle can't be determined
 //    cz in each cycle weight can be reduced this can't be determined
+
+
+//    Topological sorting
+//    It is a linear ordering of a DAG(Directed Acyclic Graph) such that for every directed edge u to v , u will come before v in that ordering
+//    a DAG will have at least one Topological order
 }

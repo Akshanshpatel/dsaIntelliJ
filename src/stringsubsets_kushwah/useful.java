@@ -1,4 +1,4 @@
-package stringsubsets;
+package stringsubsets_kushwah;
 
 public class useful{
     public static void main(String[] args) {

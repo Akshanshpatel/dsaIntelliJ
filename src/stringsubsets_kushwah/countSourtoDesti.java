@@ -1,4 +1,4 @@
-package stringsubsets;
+package stringsubsets_kushwah;
 
 public class countSourtoDesti {
     public static void main(String[] args) {

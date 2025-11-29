@@ -1,4 +1,4 @@
-package stringsubsets;
+package stringsubsets_kushwah;
 
 public class sourceDestiRiver {
     public static void main(String[] args) {

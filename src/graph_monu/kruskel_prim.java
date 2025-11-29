@@ -1,3 +1,5 @@
+package graph_monu;
+
 import java.util.*;
 
 public class kruskel_prim {
