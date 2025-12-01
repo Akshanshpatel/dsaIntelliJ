@@ -6,13 +6,16 @@ public class start {
     public static void main(String[] args) {
 
         //code for pow(n,x)-->n to power x
-        int a=3,b=5;
 //        System.out.println(pow(3,5));
 //        System.out.println(pow(3,5));
 //        System.out.println(fibboo(10));
 //        subSequence("abc","");
 //        headTail("",3);
 //        headTailNo2head("",3);
+//        Permutation("abc","");
+
+        int[] coins={2,3,5};
+//        coinPerm(coins,8,"");
 
     }
 
@@ -75,5 +78,27 @@ public class start {
             headTailNo2head(ans+"H",n-1);
         }
         headTailNo2head(ans+"T",n-1);
+    }
+
+    public static void Permutation(String ques,String ans){
+        if(ques.length()==0){
+            System.out.println(ans);
+            return;
+        }
+        for (int i = 0; i <ques.length() ; i++) {
+            Permutation(ques.substring(0,i)+ques.substring(i+1),ans+ques.charAt(i));
+        }
+    }
+
+    public static void coinPerm(int[] nums,int target,String currS){
+        if(target==0){
+            System.out.println(currS);
+            return;
+        }
+        for(int i=0;i<nums.length;i++){
+            if(target>=nums[i]){
+                coinPerm(nums,target-nums[i],currS+nums[i]);
+            }
+        }
     }
 }
